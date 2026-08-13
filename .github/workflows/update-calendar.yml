@@ -1,0 +1,39 @@
+name: Update DJIA earnings calendar
+
+on:
+  schedule:
+    # 11:00 UTC daily. GitHub cron is best-effort and can lag several minutes.
+    - cron: "0 11 * * *"
+  workflow_dispatch:      # lets you trigger a run by hand from the Actions tab
+
+permissions:
+  contents: write         # needed to commit the regenerated earnings.ics
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate earnings.ics
+        env:
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+        run: python dow30_earnings.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain earnings.ics)" ]]; then
+            git add earnings.ics
+            git commit -m "Update earnings calendar ($(date -u +%Y-%m-%d))"
+            git push
+          else
+            echo "No changes to earnings.ics"
+          fi
