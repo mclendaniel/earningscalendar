@@ -1,0 +1,3 @@
+# The script uses only the Python standard library — no dependencies required.
+# This file is kept so the workflow's setup step has something to reference if
+# you later add libraries (e.g. `requests`, `icalendar`).
