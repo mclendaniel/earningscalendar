@@ -47,6 +47,40 @@ MAX_RETRIES = 4
 
 TIMING_LABEL = {"bmo": "BMO", "amc": "AMC", "dmh": "DMH", "": "TBD"}
 
+# Map each session to a WINDOW of local Eastern time, not a point. A wide block
+# puts the event in the right half of the day (morning vs. after-close) while its
+# width signals that the exact release minute is unknown. Unknown -> all-day.
+# Format: (start_hour, start_min), (end_hour, end_min).
+SESSION_WINDOW = {
+    "bmo": ((7, 0), (9, 30)),    # pre-market, up to the 9:30 open
+    "amc": ((16, 0), (18, 0)),   # after the 4:00 close (release + typical call)
+    "dmh": ((11, 0), (13, 0)),   # midday (rare)
+}
+TZID = "America/New_York"
+
+# Self-contained VTIMEZONE so timed events render in correct local time for any
+# subscriber regardless of their own zone. Current US DST rules: 2nd Sun Mar to
+# 1st Sun Nov.
+VTIMEZONE = "\r\n".join([
+    "BEGIN:VTIMEZONE",
+    f"TZID:{TZID}",
+    "BEGIN:DAYLIGHT",
+    "TZOFFSETFROM:-0500",
+    "TZOFFSETTO:-0400",
+    "TZNAME:EDT",
+    "DTSTART:19700308T020000",
+    "RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU",
+    "END:DAYLIGHT",
+    "BEGIN:STANDARD",
+    "TZOFFSETFROM:-0400",
+    "TZOFFSETTO:-0500",
+    "TZNAME:EST",
+    "DTSTART:19701101T020000",
+    "RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU",
+    "END:STANDARD",
+    "END:VTIMEZONE",
+])
+
 
 # --- Finnhub fetch ---------------------------------------------------------
 
@@ -138,18 +172,36 @@ def build_ics(events):
         f"X-WR-CALDESC:{esc(CAL_DESC)}",
         "X-PUBLISHED-TTL:PT12H",
         "REFRESH-INTERVAL;VALUE=DURATION:PT12H",
+        VTIMEZONE,
     ]
     for ev in sorted(events, key=lambda e: e["date"]):
         d = dt.date.fromisoformat(ev["date"])
-        dtend = d + dt.timedelta(days=1)
+        day = d.strftime("%Y%m%d")
         timing = TIMING_LABEL.get(ev["hour"], "TBD")
         summary = f"{ev['symbol']} earnings ({timing})"
+        window = SESSION_WINDOW.get(ev["hour"])
+
+        if window:
+            (sh, sm), (eh, em) = window
+            dt_lines = [
+                f"DTSTART;TZID={TZID}:{day}T{sh:02d}{sm:02d}00",
+                f"DTEND;TZID={TZID}:{day}T{eh:02d}{em:02d}00",
+            ]
+        else:   # unknown session -> honest all-day event
+            dtend = d + dt.timedelta(days=1)
+            dt_lines = [
+                f"DTSTART;VALUE=DATE:{day}",
+                f"DTEND;VALUE=DATE:{dtend.strftime('%Y%m%d')}",
+            ]
 
         desc_bits = [f"Fiscal {ev['year']} Q{ev['quarter']}."]
         if ev["eps_act"] is not None:
             desc_bits.append(f"Reported EPS: {ev['eps_act']}.")
         elif ev["eps_est"] is not None:
             desc_bits.append(f"Estimated EPS: {ev['eps_est']}.")
+        if window:
+            desc_bits.append("Time block is an approximate session window (US Eastern), "
+                             "not a confirmed release time.")
         desc_bits.append("Forward dates are estimates and may shift until confirmed.")
         description = " ".join(desc_bits)
 
@@ -157,8 +209,7 @@ def build_ics(events):
             "BEGIN:VEVENT",
             fold(f"UID:{ev['uid']}"),
             f"DTSTAMP:{stamp}",
-            f"DTSTART;VALUE=DATE:{d.strftime('%Y%m%d')}",
-            f"DTEND;VALUE=DATE:{dtend.strftime('%Y%m%d')}",
+            *dt_lines,
             "TRANSP:TRANSPARENT",
             fold(f"SUMMARY:{esc(summary)}"),
             fold(f"DESCRIPTION:{esc(description)}"),
