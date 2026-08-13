@@ -7,269 +7,312 @@ X-WR-CALNAME:DJIA 30 Earnings
 X-WR-CALDESC:Earnings dates for the 30 Dow Jones Industrial Average companies. Forward dates are estimates and shift until a company confirms.
 X-PUBLISHED-TTL:PT12H
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
 BEGIN:VEVENT
 UID:GS-2026Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260714
-DTEND;VALUE=DATE:20260715
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260714T070000
+DTEND;TZID=America/New_York:20260714T093000
 TRANSP:TRANSPARENT
 SUMMARY:GS earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 20.98. Forward dates are estimate
- s and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 20.98. Time block is an approxima
+ te session window (US Eastern)\, not a confirmed release time. Forward dat
+ es are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:JPM-2026Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260714
-DTEND;VALUE=DATE:20260715
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260714T070000
+DTEND;TZID=America/New_York:20260714T093000
 TRANSP:TRANSPARENT
 SUMMARY:JPM earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 6.14. Forward dates are estimates
-  and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 6.14. Time block is an approximat
+ e session window (US Eastern)\, not a confirmed release time. Forward date
+ s are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:JNJ-2026Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260715
-DTEND;VALUE=DATE:20260716
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260715T070000
+DTEND;TZID=America/New_York:20260715T093000
 TRANSP:TRANSPARENT
 SUMMARY:JNJ earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 2.9. Forward dates are estimates 
- and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 2.9. Time block is an approximate
+  session window (US Eastern)\, not a confirmed release time. Forward dates
+  are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:UNH-2026Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260716
-DTEND;VALUE=DATE:20260717
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260716T070000
+DTEND;TZID=America/New_York:20260716T093000
 TRANSP:TRANSPARENT
 SUMMARY:UNH earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 6.38. Forward dates are estimates
-  and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 6.38. Time block is an approximat
+ e session window (US Eastern)\, not a confirmed release time. Forward date
+ s are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:TRV-2026Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260717
-DTEND;VALUE=DATE:20260718
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260717T070000
+DTEND;TZID=America/New_York:20260717T093000
 TRANSP:TRANSPARENT
 SUMMARY:TRV earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 10.04. Forward dates are estimate
- s and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 10.04. Time block is an approxima
+ te session window (US Eastern)\, not a confirmed release time. Forward dat
+ es are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:MMM-2026Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260721
-DTEND;VALUE=DATE:20260722
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260721T070000
+DTEND;TZID=America/New_York:20260721T093000
 TRANSP:TRANSPARENT
 SUMMARY:MMM earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 2.4. Forward dates are estimates 
- and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 2.4. Time block is an approximate
+  session window (US Eastern)\, not a confirmed release time. Forward dates
+  are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:GOOGL-2026Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260722
-DTEND;VALUE=DATE:20260723
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260722T160000
+DTEND;TZID=America/New_York:20260722T180000
 TRANSP:TRANSPARENT
 SUMMARY:GOOGL earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 2.85. Forward dates are estimates
-  and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 2.85. Time block is an approximat
+ e session window (US Eastern)\, not a confirmed release time. Forward date
+ s are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:IBM-2026Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260722
-DTEND;VALUE=DATE:20260723
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260722T160000
+DTEND;TZID=America/New_York:20260722T180000
 TRANSP:TRANSPARENT
 SUMMARY:IBM earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 2.93. Forward dates are estimates
-  and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 2.93. Time block is an approximat
+ e session window (US Eastern)\, not a confirmed release time. Forward date
+ s are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:HON-2026Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260723
-DTEND;VALUE=DATE:20260724
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260723T070000
+DTEND;TZID=America/New_York:20260723T093000
 TRANSP:TRANSPARENT
 SUMMARY:HON earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 4.52. Forward dates are estimates
-  and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 4.52. Time block is an approximat
+ e session window (US Eastern)\, not a confirmed release time. Forward date
+ s are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:AXP-2026Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260724
-DTEND;VALUE=DATE:20260725
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260724T070000
+DTEND;TZID=America/New_York:20260724T093000
 TRANSP:TRANSPARENT
 SUMMARY:AXP earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 4.53. Forward dates are estimates
-  and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 4.53. Time block is an approximat
+ e session window (US Eastern)\, not a confirmed release time. Forward date
+ s are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:BA-2026Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260728
-DTEND;VALUE=DATE:20260729
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260728T070000
+DTEND;TZID=America/New_York:20260728T093000
 TRANSP:TRANSPARENT
 SUMMARY:BA earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q2. Reported EPS: -0.76. Forward dates are estimate
- s and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q2. Reported EPS: -0.76. Time block is an approxima
+ te session window (US Eastern)\, not a confirmed release time. Forward dat
+ es are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:KO-2026Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260728
-DTEND;VALUE=DATE:20260729
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260728T070000
+DTEND;TZID=America/New_York:20260728T093000
 TRANSP:TRANSPARENT
 SUMMARY:KO earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 0.97. Forward dates are estimates
-  and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 0.97. Time block is an approximat
+ e session window (US Eastern)\, not a confirmed release time. Forward date
+ s are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:SHW-2026Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260728
-DTEND;VALUE=DATE:20260729
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260728T070000
+DTEND;TZID=America/New_York:20260728T093000
 TRANSP:TRANSPARENT
 SUMMARY:SHW earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 3.7. Forward dates are estimates 
- and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 3.7. Time block is an approximate
+  session window (US Eastern)\, not a confirmed release time. Forward dates
+  are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:V-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260728
-DTEND;VALUE=DATE:20260729
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260728T160000
+DTEND;TZID=America/New_York:20260728T180000
 TRANSP:TRANSPARENT
 SUMMARY:V earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q3. Reported EPS: 3.32. Forward dates are estimates
-  and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q3. Reported EPS: 3.32. Time block is an approximat
+ e session window (US Eastern)\, not a confirmed release time. Forward date
+ s are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:MSFT-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260729
-DTEND;VALUE=DATE:20260730
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260729T160000
+DTEND;TZID=America/New_York:20260729T180000
 TRANSP:TRANSPARENT
 SUMMARY:MSFT earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Reported EPS: 4.74. Forward dates are estimates
-  and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Reported EPS: 4.74. Time block is an approximat
+ e session window (US Eastern)\, not a confirmed release time. Forward date
+ s are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:PG-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260729
-DTEND;VALUE=DATE:20260730
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260729T070000
+DTEND;TZID=America/New_York:20260729T093000
 TRANSP:TRANSPARENT
 SUMMARY:PG earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q4. Reported EPS: 1.43. Forward dates are estimates
-  and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Reported EPS: 1.43. Time block is an approximat
+ e session window (US Eastern)\, not a confirmed release time. Forward date
+ s are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:AAPL-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260730
-DTEND;VALUE=DATE:20260731
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260730T160000
+DTEND;TZID=America/New_York:20260730T180000
 TRANSP:TRANSPARENT
 SUMMARY:AAPL earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q3. Reported EPS: 1.91. Forward dates are estimates
-  and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q3. Reported EPS: 1.91. Time block is an approximat
+ e session window (US Eastern)\, not a confirmed release time. Forward date
+ s are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:AMZN-2026Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260730
-DTEND;VALUE=DATE:20260731
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260730T160000
+DTEND;TZID=America/New_York:20260730T180000
 TRANSP:TRANSPARENT
 SUMMARY:AMZN earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 1.97. Forward dates are estimates
-  and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 1.97. Time block is an approximat
+ e session window (US Eastern)\, not a confirmed release time. Forward date
+ s are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:CVX-2026Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260731
-DTEND;VALUE=DATE:20260801
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260731T070000
+DTEND;TZID=America/New_York:20260731T093000
 TRANSP:TRANSPARENT
 SUMMARY:CVX earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 6.06. Forward dates are estimates
-  and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 6.06. Time block is an approximat
+ e session window (US Eastern)\, not a confirmed release time. Forward date
+ s are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:AMGN-2026Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260804
-DTEND;VALUE=DATE:20260805
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260804T160000
+DTEND;TZID=America/New_York:20260804T180000
 TRANSP:TRANSPARENT
 SUMMARY:AMGN earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 6.29. Forward dates are estimates
-  and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 6.29. Time block is an approximat
+ e session window (US Eastern)\, not a confirmed release time. Forward date
+ s are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:CAT-2026Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260804
-DTEND;VALUE=DATE:20260805
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260804T070000
+DTEND;TZID=America/New_York:20260804T093000
 TRANSP:TRANSPARENT
 SUMMARY:CAT earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 8.17. Forward dates are estimates
-  and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 8.17. Time block is an approximat
+ e session window (US Eastern)\, not a confirmed release time. Forward date
+ s are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:MCD-2026Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260804
-DTEND;VALUE=DATE:20260805
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260804T070000
+DTEND;TZID=America/New_York:20260804T093000
 TRANSP:TRANSPARENT
 SUMMARY:MCD earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 3.38. Forward dates are estimates
-  and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q2. Reported EPS: 3.38. Time block is an approximat
+ e session window (US Eastern)\, not a confirmed release time. Forward date
+ s are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:MRK-2026Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260804
-DTEND;VALUE=DATE:20260805
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260804T070000
+DTEND;TZID=America/New_York:20260804T093000
 TRANSP:TRANSPARENT
 SUMMARY:MRK earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q2. Reported EPS: -0.13. Forward dates are estimate
- s and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q2. Reported EPS: -0.13. Time block is an approxima
+ te session window (US Eastern)\, not a confirmed release time. Forward dat
+ es are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:DIS-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260805
-DTEND;VALUE=DATE:20260806
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260805T070000
+DTEND;TZID=America/New_York:20260805T093000
 TRANSP:TRANSPARENT
 SUMMARY:DIS earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q3. Reported EPS: 2.06. Forward dates are estimates
-  and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q3. Reported EPS: 2.06. Time block is an approximat
+ e session window (US Eastern)\, not a confirmed release time. Forward date
+ s are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:CSCO-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260812
-DTEND;VALUE=DATE:20260813
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260812T160000
+DTEND;TZID=America/New_York:20260812T180000
 TRANSP:TRANSPARENT
 SUMMARY:CSCO earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Reported EPS: 1.22. Forward dates are estimates
-  and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Reported EPS: 1.22. Time block is an approximat
+ e session window (US Eastern)\, not a confirmed release time. Forward date
+ s are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:HD-2027Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260818
-DTEND;VALUE=DATE:20260819
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260818T070000
+DTEND;TZID=America/New_York:20260818T093000
 TRANSP:TRANSPARENT
 SUMMARY:HD earnings (BMO)
-DESCRIPTION:Fiscal 2027 Q2. Estimated EPS: 4.8762. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2027 Q2. Estimated EPS: 4.8762. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:WMT-2027Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
+DTSTAMP:20260813T213113Z
 DTSTART;VALUE=DATE:20260820
 DTEND;VALUE=DATE:20260821
 TRANSP:TRANSPARENT
@@ -279,27 +322,29 @@ DESCRIPTION:Fiscal 2027 Q2. Estimated EPS: 0.7493. Forward dates are estima
 END:VEVENT
 BEGIN:VEVENT
 UID:CRM-2027Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260826
-DTEND;VALUE=DATE:20260827
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260826T160000
+DTEND;TZID=America/New_York:20260826T180000
 TRANSP:TRANSPARENT
 SUMMARY:CRM earnings (AMC)
-DESCRIPTION:Fiscal 2027 Q2. Estimated EPS: 3.3057. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2027 Q2. Estimated EPS: 3.3057. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:NVDA-2027Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20260826
-DTEND;VALUE=DATE:20260827
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20260826T160000
+DTEND;TZID=America/New_York:20260826T180000
 TRANSP:TRANSPARENT
 SUMMARY:NVDA earnings (AMC)
-DESCRIPTION:Fiscal 2027 Q2. Estimated EPS: 2.1283. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2027 Q2. Estimated EPS: 2.1283. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:NKE-2027Q1@dow30-earnings
-DTSTAMP:20260813T211557Z
+DTSTAMP:20260813T213113Z
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20260929
 TRANSP:TRANSPARENT
@@ -309,17 +354,18 @@ DESCRIPTION:Fiscal 2027 Q1. Estimated EPS: 0.4528. Forward dates are estima
 END:VEVENT
 BEGIN:VEVENT
 UID:GS-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20261013
-DTEND;VALUE=DATE:20261014
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20261013T070000
+DTEND;TZID=America/New_York:20261013T093000
 TRANSP:TRANSPARENT
 SUMMARY:GS earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 16.8366. Forward dates are estim
- ates and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 16.8366. Time block is an approx
+ imate session window (US Eastern)\, not a confirmed release time. Forward 
+ dates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:JNJ-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
+DTSTAMP:20260813T213113Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 TRANSP:TRANSPARENT
@@ -329,7 +375,7 @@ DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 2.9499. Forward dates are estima
 END:VEVENT
 BEGIN:VEVENT
 UID:JPM-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
+DTSTAMP:20260813T213113Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 TRANSP:TRANSPARENT
@@ -339,27 +385,29 @@ DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 5.8957. Forward dates are estima
 END:VEVENT
 BEGIN:VEVENT
 UID:TRV-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20261014
-DTEND;VALUE=DATE:20261015
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20261014T070000
+DTEND;TZID=America/New_York:20261014T093000
 TRANSP:TRANSPARENT
 SUMMARY:TRV earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 6.8406. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 6.8406. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:KO-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20261019
-DTEND;VALUE=DATE:20261020
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20261019T070000
+DTEND;TZID=America/New_York:20261019T093000
 TRANSP:TRANSPARENT
 SUMMARY:KO earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 0.9049. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 0.9049. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:MMM-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
+DTSTAMP:20260813T213113Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 TRANSP:TRANSPARENT
@@ -369,7 +417,7 @@ DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 2.4163. Forward dates are estima
 END:VEVENT
 BEGIN:VEVENT
 UID:HON-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
+DTSTAMP:20260813T213113Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 TRANSP:TRANSPARENT
@@ -379,97 +427,106 @@ DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 2.1519. Forward dates are estima
 END:VEVENT
 BEGIN:VEVENT
 UID:IBM-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20261021
-DTEND;VALUE=DATE:20261022
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20261021T160000
+DTEND;TZID=America/New_York:20261021T180000
 TRANSP:TRANSPARENT
 SUMMARY:IBM earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 2.9133. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 2.9133. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:PG-2027Q1@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20261022
-DTEND;VALUE=DATE:20261023
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20261022T070000
+DTEND;TZID=America/New_York:20261022T093000
 TRANSP:TRANSPARENT
 SUMMARY:PG earnings (BMO)
-DESCRIPTION:Fiscal 2027 Q1. Estimated EPS: 1.9347. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2027 Q1. Estimated EPS: 1.9347. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:AXP-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20261023
-DTEND;VALUE=DATE:20261024
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20261023T070000
+DTEND;TZID=America/New_York:20261023T093000
 TRANSP:TRANSPARENT
 SUMMARY:AXP earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 4.5822. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 4.5822. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:SHW-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20261026
-DTEND;VALUE=DATE:20261027
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20261026T070000
+DTEND;TZID=America/New_York:20261026T093000
 TRANSP:TRANSPARENT
 SUMMARY:SHW earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 3.7293. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 3.7293. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:UNH-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20261026
-DTEND;VALUE=DATE:20261027
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20261026T070000
+DTEND;TZID=America/New_York:20261026T093000
 TRANSP:TRANSPARENT
 SUMMARY:UNH earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 4.1695. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 4.1695. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:V-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20261026
-DTEND;VALUE=DATE:20261027
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20261026T160000
+DTEND;TZID=America/New_York:20261026T180000
 TRANSP:TRANSPARENT
 SUMMARY:V earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 3.5035. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 3.5035. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:BA-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20261027
-DTEND;VALUE=DATE:20261028
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20261027T070000
+DTEND;TZID=America/New_York:20261027T093000
 TRANSP:TRANSPARENT
 SUMMARY:BA earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: -0.1479. Forward dates are estim
- ates and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: -0.1479. Time block is an approx
+ imate session window (US Eastern)\, not a confirmed release time. Forward 
+ dates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:CAT-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20261027
-DTEND;VALUE=DATE:20261028
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20261027T070000
+DTEND;TZID=America/New_York:20261027T093000
 TRANSP:TRANSPARENT
 SUMMARY:CAT earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 7.0287. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 7.0287. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:GOOGL-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20261027
-DTEND;VALUE=DATE:20261028
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20261027T160000
+DTEND;TZID=America/New_York:20261027T180000
 TRANSP:TRANSPARENT
 SUMMARY:GOOGL earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 3.1009. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 3.1009. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:MSFT-2027Q1@dow30-earnings
-DTSTAMP:20260813T211557Z
+DTSTAMP:20260813T213113Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 TRANSP:TRANSPARENT
@@ -479,37 +536,40 @@ DESCRIPTION:Fiscal 2027 Q1. Estimated EPS: 4.8206. Forward dates are estima
 END:VEVENT
 BEGIN:VEVENT
 UID:AAPL-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20261028
-DTEND;VALUE=DATE:20261029
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20261028T160000
+DTEND;TZID=America/New_York:20261028T180000
 TRANSP:TRANSPARENT
 SUMMARY:AAPL earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 2.019. Forward dates are estimat
- es and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 2.019. Time block is an approxim
+ ate session window (US Eastern)\, not a confirmed release time. Forward da
+ tes are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:AMZN-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20261028
-DTEND;VALUE=DATE:20261029
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20261028T160000
+DTEND;TZID=America/New_York:20261028T180000
 TRANSP:TRANSPARENT
 SUMMARY:AMZN earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 1.9983. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 1.9983. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:CVX-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20261029
-DTEND;VALUE=DATE:20261030
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20261029T070000
+DTEND;TZID=America/New_York:20261029T093000
 TRANSP:TRANSPARENT
 SUMMARY:CVX earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 4.6335. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 4.6335. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:MRK-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
+DTSTAMP:20260813T213113Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 TRANSP:TRANSPARENT
@@ -519,27 +579,29 @@ DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 2.2472. Forward dates are estima
 END:VEVENT
 BEGIN:VEVENT
 UID:AMGN-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20261102
-DTEND;VALUE=DATE:20261103
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20261102T160000
+DTEND;TZID=America/New_York:20261102T180000
 TRANSP:TRANSPARENT
 SUMMARY:AMGN earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 5.9058. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 5.9058. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:MCD-2026Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20261103
-DTEND;VALUE=DATE:20261104
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20261103T070000
+DTEND;TZID=America/New_York:20261103T093000
 TRANSP:TRANSPARENT
 SUMMARY:MCD earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 3.4406. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q3. Estimated EPS: 3.4406. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:CSCO-2027Q1@dow30-earnings
-DTSTAMP:20260813T211557Z
+DTSTAMP:20260813T213113Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 TRANSP:TRANSPARENT
@@ -549,17 +611,18 @@ DESCRIPTION:Fiscal 2027 Q1. Estimated EPS: 1.1807. Forward dates are estima
 END:VEVENT
 BEGIN:VEVENT
 UID:DIS-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20261111
-DTEND;VALUE=DATE:20261112
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20261111T160000
+DTEND;TZID=America/New_York:20261111T180000
 TRANSP:TRANSPARENT
 SUMMARY:DIS earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 1.6798. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 1.6798. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:HD-2027Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
+DTSTAMP:20260813T213113Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 TRANSP:TRANSPARENT
@@ -569,17 +632,18 @@ DESCRIPTION:Fiscal 2027 Q3. Estimated EPS: 4.0834. Forward dates are estima
 END:VEVENT
 BEGIN:VEVENT
 UID:NVDA-2027Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20261117
-DTEND;VALUE=DATE:20261118
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20261117T160000
+DTEND;TZID=America/New_York:20261117T180000
 TRANSP:TRANSPARENT
 SUMMARY:NVDA earnings (AMC)
-DESCRIPTION:Fiscal 2027 Q3. Estimated EPS: 2.4084. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2027 Q3. Estimated EPS: 2.4084. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:WMT-2027Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
+DTSTAMP:20260813T213113Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 TRANSP:TRANSPARENT
@@ -589,17 +653,18 @@ DESCRIPTION:Fiscal 2027 Q3. Estimated EPS: 0.6884. Forward dates are estima
 END:VEVENT
 BEGIN:VEVENT
 UID:CRM-2027Q3@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20261201
-DTEND;VALUE=DATE:20261202
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20261201T160000
+DTEND;TZID=America/New_York:20261201T180000
 TRANSP:TRANSPARENT
 SUMMARY:CRM earnings (AMC)
-DESCRIPTION:Fiscal 2027 Q3. Estimated EPS: 3.4026. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2027 Q3. Estimated EPS: 3.4026. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:NKE-2027Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
+DTSTAMP:20260813T213113Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 TRANSP:TRANSPARENT
@@ -609,87 +674,95 @@ DESCRIPTION:Fiscal 2027 Q2. Estimated EPS: 0.5455. Forward dates are estima
 END:VEVENT
 BEGIN:VEVENT
 UID:JPM-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270114
-DTEND;VALUE=DATE:20270115
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270114T160000
+DTEND;TZID=America/New_York:20270114T180000
 TRANSP:TRANSPARENT
 SUMMARY:JPM earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 5.9726. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 5.9726. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:MMM-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270118
-DTEND;VALUE=DATE:20270119
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270118T160000
+DTEND;TZID=America/New_York:20270118T180000
 TRANSP:TRANSPARENT
 SUMMARY:MMM earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 2.0316. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 2.0316. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:JNJ-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270119
-DTEND;VALUE=DATE:20270120
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270119T160000
+DTEND;TZID=America/New_York:20270119T180000
 TRANSP:TRANSPARENT
 SUMMARY:JNJ earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 3.0419. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 3.0419. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:TRV-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270119
-DTEND;VALUE=DATE:20270120
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270119T160000
+DTEND;TZID=America/New_York:20270119T180000
 TRANSP:TRANSPARENT
 SUMMARY:TRV earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 9.7009. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 9.7009. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:PG-2027Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270120
-DTEND;VALUE=DATE:20270121
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270120T070000
+DTEND;TZID=America/New_York:20270120T093000
 TRANSP:TRANSPARENT
 SUMMARY:PG earnings (BMO)
-DESCRIPTION:Fiscal 2027 Q2. Estimated EPS: 1.9382. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2027 Q2. Estimated EPS: 1.9382. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:BA-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270125
-DTEND;VALUE=DATE:20270126
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270125T160000
+DTEND;TZID=America/New_York:20270125T180000
 TRANSP:TRANSPARENT
 SUMMARY:BA earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 0.0443. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 0.0443. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:UNH-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270125
-DTEND;VALUE=DATE:20270126
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270125T160000
+DTEND;TZID=America/New_York:20270125T180000
 TRANSP:TRANSPARENT
 SUMMARY:UNH earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 2.1396. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 2.1396. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:IBM-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270126
-DTEND;VALUE=DATE:20270127
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270126T160000
+DTEND;TZID=America/New_York:20270126T180000
 TRANSP:TRANSPARENT
 SUMMARY:IBM earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 4.6469. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 4.6469. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:MSFT-2027Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
+DTSTAMP:20260813T213113Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 TRANSP:TRANSPARENT
@@ -699,7 +772,7 @@ DESCRIPTION:Fiscal 2027 Q2. Estimated EPS: 4.9439. Forward dates are estima
 END:VEVENT
 BEGIN:VEVENT
 UID:AAPL-2027Q1@dow30-earnings
-DTSTAMP:20260813T211557Z
+DTSTAMP:20260813T213113Z
 DTSTART;VALUE=DATE:20270127
 DTEND;VALUE=DATE:20270128
 TRANSP:TRANSPARENT
@@ -709,17 +782,18 @@ DESCRIPTION:Fiscal 2027 Q1. Estimated EPS: 2.9544. Forward dates are estima
 END:VEVENT
 BEGIN:VEVENT
 UID:CAT-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270127
-DTEND;VALUE=DATE:20270128
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270127T070000
+DTEND;TZID=America/New_York:20270127T093000
 TRANSP:TRANSPARENT
 SUMMARY:CAT earnings (BMO)
-DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 7.0105. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 7.0105. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:HON-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
+DTSTAMP:20260813T213113Z
 DTSTART;VALUE=DATE:20270127
 DTEND;VALUE=DATE:20270128
 TRANSP:TRANSPARENT
@@ -729,17 +803,18 @@ DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 2.4192. Forward dates are estima
 END:VEVENT
 BEGIN:VEVENT
 UID:SHW-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270127
-DTEND;VALUE=DATE:20270128
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270127T160000
+DTEND;TZID=America/New_York:20270127T180000
 TRANSP:TRANSPARENT
 SUMMARY:SHW earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 2.3966. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 2.3966. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:V-2027Q1@dow30-earnings
-DTSTAMP:20260813T211557Z
+DTSTAMP:20260813T213113Z
 DTSTART;VALUE=DATE:20270127
 DTEND;VALUE=DATE:20270128
 TRANSP:TRANSPARENT
@@ -749,37 +824,40 @@ DESCRIPTION:Fiscal 2027 Q1. Estimated EPS: 3.7005. Forward dates are estima
 END:VEVENT
 BEGIN:VEVENT
 UID:AXP-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270128
-DTEND;VALUE=DATE:20270129
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270128T160000
+DTEND;TZID=America/New_York:20270128T180000
 TRANSP:TRANSPARENT
 SUMMARY:AXP earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 4.3252. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 4.3252. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:CVX-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270128
-DTEND;VALUE=DATE:20270129
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270128T160000
+DTEND;TZID=America/New_York:20270128T180000
 TRANSP:TRANSPARENT
 SUMMARY:CVX earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 3.9371. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 3.9371. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:AMGN-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270201
-DTEND;VALUE=DATE:20270202
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270201T160000
+DTEND;TZID=America/New_York:20270201T180000
 TRANSP:TRANSPARENT
 SUMMARY:AMGN earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 5.8845. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 5.8845. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:DIS-2027Q1@dow30-earnings
-DTSTAMP:20260813T211557Z
+DTSTAMP:20260813T213113Z
 DTSTART;VALUE=DATE:20270201
 DTEND;VALUE=DATE:20270202
 TRANSP:TRANSPARENT
@@ -789,47 +867,51 @@ DESCRIPTION:Fiscal 2027 Q1. Estimated EPS: 1.9173. Forward dates are estima
 END:VEVENT
 BEGIN:VEVENT
 UID:GOOGL-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270202
-DTEND;VALUE=DATE:20270203
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270202T160000
+DTEND;TZID=America/New_York:20270202T180000
 TRANSP:TRANSPARENT
 SUMMARY:GOOGL earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 3.4392. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 3.4392. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:MRK-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270202
-DTEND;VALUE=DATE:20270203
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270202T160000
+DTEND;TZID=America/New_York:20270202T180000
 TRANSP:TRANSPARENT
 SUMMARY:MRK earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 1.9854. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 1.9854. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:AMZN-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270203
-DTEND;VALUE=DATE:20270204
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270203T160000
+DTEND;TZID=America/New_York:20270203T180000
 TRANSP:TRANSPARENT
 SUMMARY:AMZN earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 2.4861. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 2.4861. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:KO-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270208
-DTEND;VALUE=DATE:20270209
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270208T160000
+DTEND;TZID=America/New_York:20270208T180000
 TRANSP:TRANSPARENT
 SUMMARY:KO earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 0.6135. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 0.6135. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:CSCO-2027Q2@dow30-earnings
-DTSTAMP:20260813T211557Z
+DTSTAMP:20260813T213113Z
 DTSTART;VALUE=DATE:20270209
 DTEND;VALUE=DATE:20270210
 TRANSP:TRANSPARENT
@@ -839,42 +921,46 @@ DESCRIPTION:Fiscal 2027 Q2. Estimated EPS: 1.1978. Forward dates are estima
 END:VEVENT
 BEGIN:VEVENT
 UID:MCD-2026Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270209
-DTEND;VALUE=DATE:20270210
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270209T160000
+DTEND;TZID=America/New_York:20270209T180000
 TRANSP:TRANSPARENT
 SUMMARY:MCD earnings (AMC)
-DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 3.3459. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2026 Q4. Estimated EPS: 3.3459. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:WMT-2027Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270218
-DTEND;VALUE=DATE:20270219
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270218T160000
+DTEND;TZID=America/New_York:20270218T180000
 TRANSP:TRANSPARENT
 SUMMARY:WMT earnings (AMC)
-DESCRIPTION:Fiscal 2027 Q4. Estimated EPS: 0.8208. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2027 Q4. Estimated EPS: 0.8208. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:CRM-2027Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270223
-DTEND;VALUE=DATE:20270224
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270223T160000
+DTEND;TZID=America/New_York:20270223T180000
 TRANSP:TRANSPARENT
 SUMMARY:CRM earnings (AMC)
-DESCRIPTION:Fiscal 2027 Q4. Estimated EPS: 3.6802. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2027 Q4. Estimated EPS: 3.6802. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 BEGIN:VEVENT
 UID:NVDA-2027Q4@dow30-earnings
-DTSTAMP:20260813T211557Z
-DTSTART;VALUE=DATE:20270223
-DTEND;VALUE=DATE:20270224
+DTSTAMP:20260813T213113Z
+DTSTART;TZID=America/New_York:20270223T160000
+DTEND;TZID=America/New_York:20270223T180000
 TRANSP:TRANSPARENT
 SUMMARY:NVDA earnings (AMC)
-DESCRIPTION:Fiscal 2027 Q4. Estimated EPS: 2.7384. Forward dates are estima
- tes and may shift until confirmed.
+DESCRIPTION:Fiscal 2027 Q4. Estimated EPS: 2.7384. Time block is an approxi
+ mate session window (US Eastern)\, not a confirmed release time. Forward d
+ ates are estimates and may shift until confirmed.
 END:VEVENT
 END:VCALENDAR
