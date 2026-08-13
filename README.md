@@ -78,6 +78,8 @@ Finnhub API key stored as a repository secret.
 - Change how far ahead the feed looks: edit `LOOKAHEAD_DAYS` in the script.
 - Change the update cadence: edit the `cron` line in
   `.github/workflows/update-calendar.yml`.
-- Add timing to the event *time* instead of the title: the script currently
-  makes all-day events with `(BMO)`/`(AMC)` in the title to sidestep timezone
-  issues; swap to timed events if you prefer.
+- Adjust the session windows: events are timed blocks in US Eastern —
+  BMO 7:00–9:30 AM, AMC 4:00–6:00 PM, DMH 11:00 AM–1:00 PM — deliberately wide
+  so they show the right half of the day without implying an exact release
+  minute. Companies with an unknown session stay all-day. Edit `SESSION_WINDOW`
+  in the script to change the blocks.
